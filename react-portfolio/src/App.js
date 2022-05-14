@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import About from "./components/About";
 import Nav from "./components/Nav";
 import Contact from "./components/Contact";
-import Projects from "./components/Projects"
-import Resume from "./components/Resume"
+import Projects from "./components/Projects";
+import Resume from "./components/Resume";
 import "./App.css";
 
 function App() {
@@ -15,12 +15,10 @@ function App() {
       return <About></About>;
     } else if (page == "Contact") {
       return <Contact></Contact>;
-    }
-    else if(page=="Projects"){
+    } else if (page == "Projects") {
       return <Projects></Projects>;
-    }
-    else {
-      return <Resume></Resume>
+    } else {
+      return <Resume></Resume>;
     }
   };
 
@@ -33,10 +31,12 @@ function App() {
       >
         click here
       </button>
-      <Nav setPage={setPage} ></Nav>
+      <Nav setPage={setPage}></Nav>
       <main>{render()}</main>
     </div>
   );
 }
 
 export default App;
+
+// change
