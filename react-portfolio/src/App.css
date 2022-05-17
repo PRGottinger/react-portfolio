@@ -37,7 +37,6 @@
   }
 } */
 
-
 main {
   margin: 0 auto;
   max-width: 90%;
@@ -139,7 +138,7 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 header {
@@ -244,6 +243,7 @@ textarea {
 .mx-2 {
   margin-right: var(--spacing-two);
   margin-left: var(--spacing-two);
+  color: #fafafa;
 }
 
 .my-1 {

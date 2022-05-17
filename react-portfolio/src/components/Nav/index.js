@@ -1,19 +1,20 @@
 import React from "react";
 import coverImage from "../../assets/keyboard.jpg";
+// import { Navbar } from "react-bootstrap";
 
 function Nav(props) {
-  const categories = [
-    {
-      name: "Projects",
-      description:
-        "Links to my Github Repositories containing my Development projects",
-    },
-    { name: "Resume", description: "My Resume" },
-  ];
+//   const categories = [
+//     {
+//       name: "Projects",
+//       description:
+//         "Links to my Github Repositories containing my Development projects",
+//     },
+//     { name: "Resume", description: "My Resume" },
+//   ];
 
-  function categorySelected(name) {
-    console.log(`${name} clicked`);
-  }
+//   function categorySelected(name) {
+//     console.log(`${name} clicked`);
+//   }
 
   return (
     <header>
@@ -34,6 +35,7 @@ function Nav(props) {
             onClick={() => {
               props.setPage("Contact");
             }}
+            className="mx-2"
           >
             <span>Contact</span>
           </li>
@@ -41,6 +43,7 @@ function Nav(props) {
             onClick={() => {
               props.setPage("Projects");
             }}
+            className="mx-2"
           >
             <span>Projects</span>
           </li>
@@ -49,6 +52,7 @@ function Nav(props) {
             onClick={() => {
               props.setPage("Resume");
             }}
+            className="mx-2"
           >
             <span>Resume</span>
           </li>

@@ -5,6 +5,7 @@ import Contact from "./components/Contact";
 import Projects from "./components/Projects";
 import Resume from "./components/Resume";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 
 function App() {
   // const page = "Contact";
@@ -24,13 +25,13 @@ function App() {
 
   return (
     <div>
-      <button
+      {/* <button
         onClick={() => {
           setPage("Contact");
         }}
       >
         click here
-      </button>
+      </button> */}
       <Nav setPage={setPage}></Nav>
       <main>{render()}</main>
     </div>
